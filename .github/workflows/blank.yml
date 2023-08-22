@@ -39,7 +39,7 @@ jobs:
         sudo cp /tmp/deck /usr/local/bin/
 
 #     - name: Deck dump
-#       run: deck dump -o a.yaml --headers --kong-addr http://34.125.142.73:8001       
+#       run: deck dump -o a.yaml --headers --kong-addr http://44.210.88.188:8001       
     # - name: check  # Validate the Kong configuration using deck CLI
     #   run: deck validate -s /home/runner/work/inso_test/inso_test/kong.yaml 
   
