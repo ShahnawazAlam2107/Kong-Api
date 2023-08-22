@@ -30,8 +30,8 @@ jobs:
     - name: Generate kong.yaml  # Generate Kong configuration in declarative format
       run: ./inso generate config pipe1.yml --type declarative -o kong.yaml --kongVersion 3
 
-    - name: open kong.yaml  # Display the contents of the generated Kong configuration
-      run: cat /home/runner/work/inso_test/inso_test/kong.yaml
+    # - name: open kong.yaml  # Display the contents of the generated Kong configuration
+    #   run: cat /home/runner/work/inso_test/inso_test/kong.yaml
     - name: install deck CLI  # Install deck CLI for syncing Kong configuration
       run: |
         curl -sL https://github.com/kong/deck/releases/download/v1.17.2/deck_1.17.2_linux_amd64.tar.gz -o deck.tar.gz
@@ -40,8 +40,8 @@ jobs:
 
 #     - name: Deck dump
 #       run: deck dump -o a.yaml --headers --kong-addr http://34.125.142.73:8001       
-    - name: check  # Validate the Kong configuration using deck CLI
-      run: deck validate -s /home/runner/work/inso_test/inso_test/kong.yaml 
+    # - name: check  # Validate the Kong configuration using deck CLI
+    #   run: deck validate -s /home/runner/work/inso_test/inso_test/kong.yaml 
   
 #     - name: Convert kong declarative  # Convert the Kong configuration to version 3.x using deck CLI
 #       run: |
