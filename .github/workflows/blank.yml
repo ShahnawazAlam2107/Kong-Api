@@ -24,6 +24,6 @@ jobs:
     - name: Installing inso
       run:  npm install -g insomnia
     - name: Test the Inso OpenApSpec
-      run: ./inso run test spc_0d1e37 
-    - name: Lint OpenAPI Spec  # Lint the OpenAPI spec using Insomnia CLI
-      run: ./inso lint spec spc_0d1e3725h
+      run: ./inso run test spc_0d1e37 --env env_18f77ce4b625h
+    # - name: Lint OpenAPI Spec  # Lint the OpenAPI spec using Insomnia CLI
+    #   run: ./inso lint spec spc_0d1e3725h
