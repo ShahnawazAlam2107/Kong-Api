@@ -36,5 +36,5 @@ jobs:
         sudo cp /tmp/deck /usr/local/bin/
           
     - name: Deploy to Kong  # Sync the Kong configuration to Kong API Gateway
-      run: deck sync -s a.yaml -s kong.yaml  --kong-addr http://44.203.184.142:8001
+      run: deck sync -s kong.yaml  --kong-addr http://44.203.184.142:8001
 
