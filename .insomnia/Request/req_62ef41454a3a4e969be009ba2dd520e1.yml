@@ -1,0 +1,21 @@
+_id: req_62ef41454a3a4e969be009ba2dd520e1
+type: Request
+parentId: fld_f792d998b90f4b9a90280c04104c8b3b
+modified: 1692930183422
+created: 1692930110946
+url: "{{ _.base_path }}/json"
+name: /json
+description: ""
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1692930110946
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
